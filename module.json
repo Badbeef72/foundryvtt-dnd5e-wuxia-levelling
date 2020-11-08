@@ -28,6 +28,6 @@
         }
     ],
     "url": "https://github.com/Badbeef72/foundryvtt-dnd5e-wuxia-levelling",
-    "manifest": "",
-    "download": "https://github.com/Badbeef72/foundryvtt-dnd5e-wuxia-levelling/archive/0.0.1.zip"
+    "manifest": "https://github.com/Badbeef72/foundryvtt-dnd5e-wuxia-levelling/releases/download/0.0.1/module.json",
+    "download": "https://github.com/Badbeef72/foundryvtt-dnd5e-wuxia-levelling/releases/download/0.0.1/module.zip"
 }
