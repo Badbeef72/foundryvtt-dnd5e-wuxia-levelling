@@ -2,7 +2,7 @@
   "name": "foundryvtt-dnd5e-wuxia-levelling",
   "title": "Wuxia Levelling for DND5e",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "minimumCoreVersion": "0.7.5",
   "compatibleCoreVersion": "0.7.5",
   "author": "Danny Williams <danps311@hotmail.co.uk>",
@@ -27,5 +27,5 @@
   ],
   "url": "https://github.com/Badbeef72/foundryvtt-dnd5e-wuxia-levelling",
   "manifest": "",
-  "download": ""
+  "download": "https://github.com/Badbeef72/foundryvtt-dnd5e-wuxia-levelling/archive/0.0.1.zip"
 }
