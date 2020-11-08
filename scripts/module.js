@@ -6,7 +6,7 @@
 Hooks.once('init', async function() {
     game.dnd5e.config.CHARACTER_EXP_LEVELS = [0, 250, 750, 2000, 3000, 4000, 8000, 10000, 12000, 20000, 25000, 30000, 40000, 45000, 50000, 75000, 80000, 85000, 100000, 110000, 120000, 150000, 175000, 200000, 300000, 350000, 400000, 500000, 600000, 700000, 800000, 900000, 1000000];
 
-    Item5e.prepareData = function() {
+    Item5e.prototype.prepareData = function() {
         super.prepareData();
 
         // Get the Item's data
@@ -102,7 +102,7 @@ Hooks.once('init', async function() {
         this.labels = labels;
     }
 
-    Actor5e._prepareCharacterData = function(actorData) {
+    Actor5e.prototype._prepareCharacterData = function(actorData) {
         const data = actorData.data;
     
         // Determine character level and available hit dice based on owned Class items
@@ -130,7 +130,7 @@ Hooks.once('init', async function() {
     
         // Inventory encumbrance
         data.attributes.encumbrance = this._computeEncumbrance(actorData);
-      }
+    }
 });
 
 Hooks.once('ready', async function() {
