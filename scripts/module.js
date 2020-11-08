@@ -1,4 +1,5 @@
-(() => { })();
+import Item5e from "../../../systems/dnd5e/module/item/entity.js";
+import Actor5e from "../../../systems/dnd5e/module/actor/entity.js";
 
 /* ------------------------------------------- */
 /*              Initialise Module              */
@@ -7,7 +8,7 @@ Hooks.once('init', async function() {
     game.dnd5e.config.CHARACTER_EXP_LEVELS = [0, 250, 750, 2000, 3000, 4000, 8000, 10000, 12000, 20000, 25000, 30000, 40000, 45000, 50000, 75000, 80000, 85000, 100000, 110000, 120000, 150000, 175000, 200000, 300000, 350000, 400000, 500000, 600000, 700000, 800000, 900000, 1000000];
 
     Item5e.prototype.prepareData = function() {
-        super.prepareData();
+        Item.prototype.prepareData.call(this);
 
         // Get the Item's data
         const itemData = this.data;
