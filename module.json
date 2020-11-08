@@ -6,8 +6,6 @@
     "minimumCoreVersion": "0.7.5",
     "compatibleCoreVersion": "0.7.5",
     "author": "Danny Williams <danps311@hotmail.co.uk>",
-    "dependencies": [
-    ],
     "esmodules": [
         "/scripts/module.js"
     ],
