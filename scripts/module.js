@@ -102,6 +102,36 @@ Hooks.once('init', async function() {
         // Assign labels
         this.labels = labels;
     }
+
+    Actor5e._prepareCharacterData = function(actorData) {
+        const data = actorData.data;
+    
+        // Determine character level and available hit dice based on owned Class items
+        const [level, hd] = actorData.items.reduce((arr, item) => {
+          if ( item.type === "class" ) {
+            const classLevels = parseInt(item.data.levels) || 1;
+            arr[0] += classLevels;
+            arr[1] += classLevels - (parseInt(item.data.hitDiceUsed) || 0);
+          }
+          return arr;
+        }, [0, 0]);
+        data.details.level = level;
+        data.attributes.hd = hd;
+    
+        // Character proficiency bonus
+        data.attributes.prof = Math.floor((level + 11) / 6);
+    
+        // Experience required for next level
+        const xp = data.details.xp;
+        xp.max = this.getLevelExp(level || 1);
+        const prior = this.getLevelExp(level - 1 || 0);
+        const required = xp.max - prior;
+        const pct = Math.round((xp.value - prior) * 100 / required);
+        xp.pct = Math.clamped(pct, 0, 100);
+    
+        // Inventory encumbrance
+        data.attributes.encumbrance = this._computeEncumbrance(actorData);
+      }
 });
 
 Hooks.once('ready', async function() {
