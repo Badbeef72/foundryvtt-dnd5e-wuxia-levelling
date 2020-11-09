@@ -2,15 +2,13 @@
 	"class": [
 		{
 			"name": "Cultivator",
-			"source": "",
-			"page": 1,
-			"srd": false,
+			"source": "PHB",
+			"page": 46,
+			"srd": true,
 			"hd": {
 				"number": 1,
 				"faces": 10
 			},
-			"proficiency": [
-			],
 			"startingProficiencies": {
 				"weapons": [
 					"simple"
@@ -63,8 +61,6 @@
 						]
 					}
 				]
-			},
-			"multiclassing": {
 			},
 			"classTableGroups": [
 				{
@@ -222,7 +218,6 @@
 				"Ability Score Improvement|Monk||19",
 				"Proficiency Versatility|Monk||19|UAClassFeatureVariants",
 				"Perfect Self|Monk||20",
-				"Perfect Self 2|Monk||21"
 			],
 			"subclassTitle": "Monastic Tradition",
 			"subclasses": [
