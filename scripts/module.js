@@ -313,6 +313,51 @@ Hooks.once('init', async function () {
     }
 });
 
-Hooks.once('ready', async function () {
-
-});
+/* REALM LEVEL - WIP */
+/*
+REALM_LEVEL = [
+    "Lower Disciple",
+    "Middle Disciple",
+    "Upper Disciple",
+  
+    "Lower Practitioner",
+    "Middle Practitioner",
+    "Upper Practitioner",
+  
+    "Lower Expert",
+    "Middle Expert",
+    "Upper Expert",
+  
+    "Lower Master",
+    "Middle Master",
+    "Upper Master",
+  
+    "Lower Venerate",
+    "Middle Venerate",
+    "Upper Venerate",
+  
+    "Lower Lord",
+    "Middle Lord",
+    "Upper Lord",
+  
+    "Lower King",
+    "Middle King",
+    "Upper King",
+  
+    "Lower Emperor",
+    "Middle Emperor",
+    "Upper Emperor",
+  
+    "Lower Sage",
+    "Middle Sage",
+    "Upper Sage",
+  
+    "Lower Deity",
+    "Middle Deity",
+    "Upper Deity",
+  
+    "Lower God",
+    "Middle God",
+    "Upper God",
+  ];
+*/
